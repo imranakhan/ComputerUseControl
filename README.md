@@ -18,3 +18,5 @@ https://www.elifulkerson.com/projects/commandline-text-to-speech.php
 To play the text
 voice -k speak.txt
 
+Telegram Notifications
+https://dev.to/rizkyrajitha/get-notifications-with-telegram-bot-537l
