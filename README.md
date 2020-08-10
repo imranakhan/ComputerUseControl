@@ -6,6 +6,7 @@ We can update the XML for the Windows task with the appropriate times/frequency 
 
 Currently set to kick off with Windows Task Scheduler at 10:45pm, trigger every 5 minutes for an hour (Assuming the user gives up and goes to bed by then)
 
+# Adding the ability to Unmute the computer at a certain time in the morning and play Surah Yaseen to wake me up.
 Added the ability to Mute and Unmute computer at a certain time.
 
 Using the utility nircmd with Task scheduler to unmute and speak a file
