@@ -20,3 +20,18 @@ voice -k speak.txt
 
 Telegram Notifications
 https://dev.to/rizkyrajitha/get-notifications-with-telegram-bot-537l
+
+To stop VLC you need to do vlc vlc://quit
+
+
+
+https://api.telegram.org/bot<YourBOTToken>/getUpdates
+
+Use API to get the list of images, and then send the image to telegram
+https://wallhaven.cc/help/api
+
+We need three feeds:
+
+Motivation quote
+motivational Image
+Fitness images
