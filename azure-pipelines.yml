@@ -23,3 +23,8 @@ steps:
     git push --tags
   workingDirectory: $(Build.SourcesDirectory)
   displayName: 'Git Commit and Tag from pipeline'
+
+- task: PowerShell@2
+  inputs:
+    filePath: 'RetrieveDailyQuotes.ps1'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
