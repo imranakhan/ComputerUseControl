@@ -1,5 +1,5 @@
 #$token = "1389223003:AAGSYOvwwaDXGiZ7ARjrJTVxeCYGl3FjWy0"
-#$chatId = -425223399
+#$chatId = -421206145
 
 $categories = @('inspire','management','sports', 'life', 'funny', 'love', 'art', 'students')
 #$categories = @('inspire')
@@ -21,11 +21,5 @@ foreach ($category in $categories) {
     Add-Content ".\Quotes\$filename" "Hello World" #$dailyQuote
 }
 
-
-#git add .
-
-#$date = Get-Date -DisplayHint Date
-#git commit -m "Retrieve Daily Quotes for $date"
-#git push origin master
 
 #Send-TelegramTextMessage -BotToken $token -ChatId $chatId -Message $quote
