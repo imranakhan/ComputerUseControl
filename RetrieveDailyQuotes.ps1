@@ -1,8 +1,5 @@
-#$token = "1389223003:AAGSYOvwwaDXGiZ7ARjrJTVxeCYGl3FjWy0"
-#$chatId = -421206145
 
 $categories = @('inspire','management','sports', 'life', 'funny', 'love', 'art', 'students')
-#$categories = @('inspire')
 
 foreach ($category in $categories) {
 
@@ -21,6 +18,3 @@ foreach ($category in $categories) {
     
     Add-Content ".\Quotes\$filename" $dailyQuote
 }
-
-
-#Send-TelegramTextMessage -BotToken $token -ChatId $chatId -Message $quote
