@@ -29,3 +29,13 @@ steps:
     git push -u origin master
   workingDirectory: $(Build.SourcesDirectory)
   displayName: 'Git Commit and Push to Repo'
+
+- task: SendTelegramNotification@0
+  displayName: 'Send a Telegram message to yourself'
+  inputs:
+    botToken: '$(BOT_TOKEN)'
+    chats: '-421206145'
+    teamUrl: true
+    message: 'Quote of the day retrieval completed!'
+    buildNumber: true
+    buildQueuedBy: true
