@@ -14,6 +14,7 @@ steps:
   persistCredentials: true
 
 - task: PowerShell@2
+  displayName: 'Retrieve daily quotes and write to files'
   inputs:
     filePath: 'RetrieveDailyQuotes.ps1'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
@@ -27,4 +28,4 @@ steps:
     git commit -m "Daily Quote retrieval : $now"
     git push -u origin master
   workingDirectory: $(Build.SourcesDirectory)
-  displayName: 'Git Commit and Tag from pipeline'
+  displayName: 'Git Commit and Push to Repo'
