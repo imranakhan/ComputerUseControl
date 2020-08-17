@@ -9,10 +9,3 @@ else {
     echo "Process is running" 
     #Do Nothing
 }
-
-
-#For infinite loop for the check in script
-#while(1)
-#{
-#   start-sleep -seconds 600
-#}
