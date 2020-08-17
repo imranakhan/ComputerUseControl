@@ -6,8 +6,8 @@ We can update the XML for the Windows task with the appropriate times/frequency 
 
 Currently set to kick off with Windows Task Scheduler at 10:45pm, trigger every 5 minutes for an hour (Assuming the user gives up and goes to bed by then)
 
-# Adding the ability to Unmute the computer at a certain time in the morning and play Surah Yaseen to wake me up.
-Added the ability to Mute and Unmute computer at a certain time.
+#  Unmute the computer at a certain time in the morning as an alarm
+Added the ability to Mute and Unmute computer at a certain time and play Surah Yaseem to wake me up
 
 Using the utility nircmd with Task scheduler to unmute and speak a file
 http://www.nirsoft.net/utils/nircmd.html
@@ -23,7 +23,6 @@ Telegram Notifications
 https://dev.to/rizkyrajitha/get-notifications-with-telegram-bot-537l
 
 To stop VLC you need to do vlc vlc://quit
-
 
 
 https://api.telegram.org/bot<YourBOTToken>/getUpdates
