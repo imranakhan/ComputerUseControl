@@ -22,7 +22,8 @@ steps:
     git add .
     git config user.email "imranak123@gmail.com"
     git config user.name "Imran Khan"
-    git commit -m "Daily Quote retrieval : " + (date +"%d-%b-%Y")
+    now="$(date +'%d-%b-%Y')"
+    git commit -m "Daily Quote retrieval : $now"
     git push origin master
   workingDirectory: $(Build.SourcesDirectory)
   displayName: 'Git Commit and Tag from pipeline'
