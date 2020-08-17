@@ -22,10 +22,10 @@ foreach ($category in $categories) {
 }
 
 
-git add .
+#git add .
 
-$date = Get-Date -DisplayHint Date
-git commit -m "Retrieve Daily Quotes for $date"
-git push
+#$date = Get-Date -DisplayHint Date
+#git commit -m "Retrieve Daily Quotes for $date"
+#git push origin master
 
 #Send-TelegramTextMessage -BotToken $token -ChatId $chatId -Message $quote
