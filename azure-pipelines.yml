@@ -13,18 +13,16 @@ steps:
 - checkout: self
   persistCredentials: true
 
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    git add filename.ext
-    git push origin
-    git tag -a tagName -m 'tag message' 
-    git push --tags
-  workingDirectory: $(Build.SourcesDirectory)
-  displayName: 'Git Commit and Tag from pipeline'
-
 - task: PowerShell@2
   inputs:
     filePath: 'RetrieveDailyQuotes.ps1'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- script: |
+    git add .
+    git config user.email "imranak123@gmail.com"
+    git config user.name "Imran Khan"
+    git commit -m "Daily Quote retrieval : " + (date +"%d-%b-%Y")
+    git push origin master
+  workingDirectory: $(Build.SourcesDirectory)
+  displayName: 'Git Commit and Tag from pipeline'
